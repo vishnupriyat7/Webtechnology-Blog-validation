@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Log In</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <img
+          src="assets/img/icons8-front.png"
+          href="index.html"
+          alt=""
+          srcset=""
+          height="50px"
+          width="50px"
+        />&nbsp;
+        <a href="index.html" class="navbar-brand">
+          <h3>Front End<span class="text-primary">Technologies</span></h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggler="collapse"
+          data-bs-target="#menu"
+          aria-expanded="false"
+          aria-label="ToggleNavigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home </a>
+            </li>
+            <!-- <li class="nav-item">
+            <a href="index.html" class="nav-link">About
+            </a>
+          </li> -->
+            <li class="nav-item">
+              <a href="card.html" class="nav-link">Contents </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact </a>
+            </li>
+          </ul>
+          <a href="signup.html">
+            <button class="btn btn-primary me-2">Sign Up</button></a
+          >
+          <a href="login.html">
+            <button class="btn btn-outline-primary">Login</button></a
+          >
+        </div>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <br />
+    <section class="vh-100">
+      <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-md-9 col-lg-6 col-xl-5">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+              class="img-fluid"
+              alt="Sample image"
+            />
+          </div>
+          <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <form>
+              <div
+                class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start"
+              >
+                <p class="lead fw-normal mb-0 me-3">Sign In</p>
+                <!-- <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+      
+                  <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+      
+                  <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </button> -->
+              </div>
+
+              <div class="divider d-flex align-items-center my-4">
+                <div
+                  class="alert alert-danger"
+                  id="success"
+                  role="alert"
+                  style="display: none"
+                >
+                  This is a danger alert—check it out!
+                </div>
+                <p class="text-center fw-bold mx-3 mb-0"></p>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example3"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  id="email-login"
+                  class="form-control form-control-lg"
+                  placeholder="Enter a valid email address"
+                />
+                <div id="emailLoginErr"></div>
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-3">
+                <label class="form-label" for="form3Example4">Password</label>
+                <input
+                  type="password"
+                  id="password-login"
+                  class="form-control form-control-lg"
+                  placeholder="Enter password"
+                />
+                <div id="passwordLoginErr"></div>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <!-- Checkbox -->
+                <div class="form-check mb-0">
+                  <input
+                    class="form-check-input me-2"
+                    type="checkbox"
+                    value=""
+                    id="form2Example3"
+                  />
+                  <label class="form-check-label" for="form2Example3">
+                    Remember me
+                  </label>
+                </div>
+                <a href="#!" class="text-body">Forgot password?</a>
+              </div>
+
+              <div class="text-center text-lg-start mt-4 pt-2">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg"
+                  style="padding-left: 2.5rem; padding-right: 2.5rem"
+                  id="button-Login"
+                >
+                  Login
+                </button>
+                <p class="small fw-bold mt-2 pt-1 mb-0">
+                  Don't have an account?
+                  <a href="signup.html" class="link-danger">Sign Up</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-light text-center text-lg-start fixed-bottom">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright:
+        <a class="text-dark" href="index.html">Front End Technolegies</a>
+      </div>
+      <!-- Copyright -->
+      <script type="text/javascript">
+        let emailLogin = document.getElementById("email-login");
+        console.log("emailLogin");
+        let emailValidationLogin = function () {
+          let emailLoginValue = emailLogin.value.trim();
+          let validLoginEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+          let emailLoginErr = document.getElementById("emailLoginErr");
+          if (emailLoginValue == "") {
+            emailLoginErr.innerHTML = "Please Enter Your Email";
+          } else if (!validLoginEmail.test(emailLoginValue)) {
+            emailLoginErr.innerHTML =
+              "The Email address should be in valid format";
+          } else {
+            emailLoginErr.innerHTML = "";
+            return true;
+          }
+        };
+        emailLogin.oninput = function () {
+          emailValidationLogin();
+        };
+
+        let passwordLogin = document.getElementById("password-login");
+        let passwordLoginValidation = function () {
+          let passwordLoginValue = passwordLogin.value.trim();
+          let validLoginPassword =
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+          let passwordLoginErr = document.getElementById("passwordLoginErr");
+          if (passwordLoginValue == "") {
+            passwordLoginErr.innerHTML = "Please Enter the Password";
+          } else if (!validLoginPassword.test(passwordLoginValue)) {
+            passwordLoginErr.innerHTML =
+              "The Password should contain atleast one uppercase, lowercase, digit, special charecters & 8 charecters";
+          } else {
+            passwordLoginErr.innerHTML = "";
+            return true;
+          }
+        };
+        passwordLogin.oninput = function () {
+          passwordLoginValidation();
+        };
+
+        document.getElementById("button-Login").onclick = function (e) {
+          emailValidationLogin();
+          passwordLoginValidation();
+
+          if (
+            emailValidationLogin() == true &&
+            passwordLoginValidation() == true
+          ) {
+            //  let success = document.getElementById("success");
+            //  success.style.display="block";
+            //  success.innerHTML= "Sign Up Validation Success";
+            alert("Validation Success !!! Thank You for Login ");
+            //Redirecting to other page or webste code or you can set your own html page.
+            window.location =
+              "http://127.0.0.1:5500/bootstrap_sample_front_end_technologies-main/login.html";
+            return true;
+          } else {
+            success.innerHTML = "Error in Validation";
+            return false;
+          }
+        };
+      </script>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

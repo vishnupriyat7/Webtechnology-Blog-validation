@@ -1,0 +1,20 @@
+.landing{
+    background:url('../img/black_background.jpg') no-repeat;
+    width: auto;
+    height: 92vh;
+    padding-top: 10%;
+}
+.head{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 10%;
+    padding-bottom: 2%;
+}
+.para{
+    width: 50%;
+}
+.secton-corosal{
+    height: 80%;
+    width: 60%;
+    margin: 0 auto;
+}
